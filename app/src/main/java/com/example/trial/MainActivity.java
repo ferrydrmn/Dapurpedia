@@ -1,4 +1,4 @@
-package com.example.dapurpedia;
+package com.example.trial;
 
 import androidx.appcompat.app.AppCompatActivity;
 
