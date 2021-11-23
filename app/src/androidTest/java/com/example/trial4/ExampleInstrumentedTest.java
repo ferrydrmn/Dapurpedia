@@ -1,4 +1,4 @@
-package com.example.dapurpedia;
+package com.example.trial4;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.dapurpedia", appContext.getPackageName());
+        assertEquals("com.example.trial4", appContext.getPackageName());
     }
 }
