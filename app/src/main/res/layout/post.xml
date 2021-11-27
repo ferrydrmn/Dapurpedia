@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+
+    <ImageView
+    android:id="@+id/backButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+    
+    <TextView
+        android:id="@+id/titlePost"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Tulis resepmu"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/logoPost"
+        android:layout_width="190dp"
+        android:layout_height="145dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titlePost"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformnamaresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Nama Resep"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoPost"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformnamaresep"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:hint="Resep"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tvformnamaresep"
+        app:layout_constraintTop_toBottomOf="@+id/logoPost"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformfotomakanan"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Foto makanan "
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformnamaresep"
+        app:layout_constraintVertical_bias="0" />
+    <Button
+        android:id="@+id/btnformfotomakanan"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:text="Pilih foto"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tvformfotomakanan"
+        app:layout_constraintTop_toBottomOf="@+id/etformnamaresep"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformdeskripsiresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Deskripsi"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformfotomakanan"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformdeskripsiresep"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:hint="deskripsi"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tvformdeskripsiresep"
+        app:layout_constraintTop_toBottomOf="@+id/btnformfotomakanan"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformporsiresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Porsi"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformdeskripsiresep"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformporsiresep"
+        android:layout_width="180dp"
+        android:layout_height="35dp"
+        android:hint="jumlah porsi, besarnya"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tvformporsiresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformdeskripsiresep"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformalatresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Alat"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformporsiresep"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformalatresep"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:hint="alat-alat"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/tvformporsiresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformporsiresep"
+        app:layout_constraintVertical_bias="0"/>
+    <ImageView
+        android:id="@+id/btnaddformalatresep"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/etformalatresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformporsiresep"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformbahanresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Bahan-bahan"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformalatresep"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformbahanresep"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:hint="bahan"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/tvformbahanresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformalatresep"
+        app:layout_constraintVertical_bias="0"/>
+    <EditText
+        android:id="@+id/etformbahan2resep"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:hint="jumlah"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/etformbahanresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformalatresep"
+        app:layout_constraintVertical_bias="0"/>
+    <EditText
+        android:id="@+id/etformbahan3resep"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:hint="ts?"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/etformbahan2resep"
+        app:layout_constraintTop_toBottomOf="@+id/etformalatresep"
+        app:layout_constraintVertical_bias="0"/>
+    <ImageView
+        android:id="@+id/btnaddformbahanresep"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/etformalatresep"
+        app:layout_constraintTop_toBottomOf="@+id/btnaddformalatresep"
+        app:layout_constraintVertical_bias="0"/>
+
+    <TextView
+        android:id="@+id/tvformcarabuatresep"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:text="Cara membuat"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvformbahanresep"
+        app:layout_constraintVertical_bias="0" />
+    <EditText
+        android:id="@+id/etformcarabuatresep"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:hint="Langkah-langkah"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/tvformcarabuatresep"
+        app:layout_constraintTop_toBottomOf="@+id/etformbahan3resep"
+        app:layout_constraintVertical_bias="0"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/dark_red"
+        android:text="Post"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

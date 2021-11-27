@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trial4">
         <activity
+            android:name=".DetailfoodActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisActivity"
             android:exported="true" />
         <activity
