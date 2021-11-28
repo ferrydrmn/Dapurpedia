@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">Trial4</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">dapurpedia</string>
+    <string name="tittle">PROFILE</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="button1">CHOOSE NEW PROFILE PICTURE</string>
+    <string name="button2">UPDATE PROFILE INFORMATION</string>
+    <string name="button3">CHANGE PASSWORD</string>
+    <string name="button4">LOGOUT</string>
+    <string name="recent_password">Recent Password</string>
+    <string name="re_type_recent_passsword">Re-type Recent Passsword</string>
 </resources>
